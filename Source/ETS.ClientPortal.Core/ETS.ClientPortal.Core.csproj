@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3853B732-8943-4D7A-A8D0-ECE61F86BAB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETS.ClientPortal.Core</RootNamespace>
+    <AssemblyName>ETS.ClientPortal.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionManager.cs" />
+    <Compile Include="ActionRouter.cs" />
+    <Compile Include="CategoryChangeType.cs" />
+    <Compile Include="CommonFormatField.cs" />
+    <Compile Include="ConfigurationAction.cs" />
+    <Compile Include="Domain\Category.cs" />
+    <Compile Include="Domain\Customer.cs" />
+    <Compile Include="Domain\Entity.cs" />
+    <Compile Include="Domain\Order.cs" />
+    <Compile Include="Domain\OrderLine.cs" />
+    <Compile Include="Domain\Product.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="EntityPayload.cs" />
+    <Compile Include="ActionType.cs" />
+    <Compile Include="EntityChangeTypes.cs" />
+    <Compile Include="FieldChangeTypes.cs" />
+    <Compile Include="FeedConfig.cs" />
+    <Compile Include="FeedField.cs" />
+    <Compile Include="FieldChange.cs" />
+    <Compile Include="FieldMap.cs" />
+    <Compile Include="FieldTransform.cs" />
+    <Compile Include="Interface\IObjectContextStorage.cs" />
+    <Compile Include="Interface\ISpecification.cs" />
+    <Compile Include="Interface\IUnitOfWork.cs" />
+    <Compile Include="Interface\Repository\ICustomerRepository.cs" />
+    <Compile Include="Interface\Repository\IRepository.cs" />
+    <Compile Include="Interface\Service\IServiceFactory.cs" />
+    <Compile Include="ProcessRule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\Enumerations\" />
+    <Folder Include="Interface\Domain\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="_DSI class layout.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

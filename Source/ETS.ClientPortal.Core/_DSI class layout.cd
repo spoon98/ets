@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="*** Change Category Types ***&#xD;&#xA;*** FR9-FR22&#xD;&#xA;Update Corporate / Institution Information&#xD;&#xA;Calculate Lead Bank&#xD;&#xA;Update Financial Data&#xD;&#xA;Update Ratings Data&#xD;&#xA;Update Industry Keys&#xD;&#xA;Update Headquarters Address&#xD;&#xA;PO Box Determination &#xD;&#xA;Create Headquarters Address&#xD;&#xA;New Entity Request&#xD;&#xA;Merge Entity Request&#xD;&#xA;Hierarchy Adjustment Request">
+    <Position X="11.438" Y="16.167" Height="2.333" Width="2.075" />
+  </Comment>
+  <Comment CommentText="*****************************Configuration********************&#xD;&#xA;DataSourceID	EntityChangeTypeID		Action">
+    <Position X="9.875" Y="13.167" Height="0.75" Width="3.596" />
+  </Comment>
+  <Comment CommentText="*************Configuration***********&#xD;&#xA;CategoryChangeTypeID	Field">
+    <Position X="11.229" Y="15.167" Height="0.75" Width="2.283" />
+  </Comment>
+  <Comment CommentText="*******************Configuration***************&#xD;&#xA;EntityChangeTypeID	CategoryChangeTypeID">
+    <Position X="10.416" Y="14.146" Height="0.75" Width="3.054" />
+  </Comment>
+  <Comment CommentText="***EntityChangeType***&#xD;&#xA;Auto Update&#xD;&#xA;New Entity Request&#xD;&#xA;Inactivate Entity Request&#xD;&#xA;Hierarchy Update Request">
+    <Position X="9.583" Y="16.166" Height="2.333" Width="1.7" />
+  </Comment>
+  <Class Name="ETS.ClientPortal.Core.EntityChangeSet" HideInheritanceLine="true">
+    <Position X="6.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>EntityPayload.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EntityChangeType" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="FieldChanges" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.FieldChange">
+    <Position X="6.5" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAEAEAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FieldChange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.ActionManager">
+    <Position X="13.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ActionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.ActionRouter">
+    <Position X="13.5" Y="6.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>ActionRouter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.ActionConfiguration">
+    <Position X="10.5" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAQAAAEAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConfigurationAction.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ChangeCategoryType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.CategoryChangeType" HideInheritanceLine="true">
+    <Position X="10.75" Y="10" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CategoryChangeType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.Source" HideInheritanceLine="true">
+    <Position X="1.25" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAQAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Source.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Feeds" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.EntityBase&lt;IdT&gt;">
+    <Position X="10.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EntityBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.FeedConfig">
+    <Position X="3.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FeedConfig.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="FeedFields" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.FeedField">
+    <Position X="7.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FeedField.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Rule" />
+      <Property Name="Map" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.ProcessRule">
+    <Position X="7" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAgAA=</HashCode>
+      <FileName>ProcessRule.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ActionType" />
+      <Property Name="Field" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.FieldMap">
+    <Position X="7" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAEAAAAAhAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FieldMap.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Format" />
+      <Property Name="FieldTransform" />
+      <Property Name="FeedField" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.CommonFormatField">
+    <Position X="7" Y="14.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>CommonFormatField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ETS.ClientPortal.Core.FieldTransform">
+    <Position X="4" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FieldTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ETS.ClientPortal.Core.EntityChangeTypes">
+    <Position X="6" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAACAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>EntityChangeTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ETS.ClientPortal.Core.ActionType">
+    <Position X="4" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAgAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>ActionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

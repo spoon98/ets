@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{2514FD1A-717B-4986-BE7D-134E55FF9DD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0D4C6B09-8153-4E70-8D86-C68F7B23433D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tasks", "Tasks", "{63366BD6-43CD-467E-B376-7874CEE02F11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specs", "Specs", "{09B3E97B-7AA2-4339-9C60-3B60DE6401AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E07341D-0790-4204-823C-829AD366892C}"
+	ProjectSection(SolutionItems) = preProject
+		FIS.DSI.Web1.vsmdi = FIS.DSI.Web1.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C36DDDD3-999C-4CA7-8EC3-5CDFE4CA3C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETS.ClientPortal.Web", "Source\ETS.ClientPortal.Web\ETS.ClientPortal.Web.csproj", "{EEAEF5AC-E6E5-4256-A4F0-16C233C7FED7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIS.DSI.Web.Tests", "Source\ETS.ClientPortal.Web.Tests\FIS.DSI.Web.Tests.csproj", "{2C86FD2D-79F5-48BB-BC4F-247D11291BD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETS.ClientPortal.Tasks", "Source\ETS.ClientPortal.Tasks\ETS.ClientPortal.Tasks.csproj", "{1B55EC56-E091-415D-9F67-C9057F1A745F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETS.ClientPortal.Infrastructure.Data", "Source\ETS.ClientPortal.Infrastructure.Data\ETS.ClientPortal.Infrastructure.Data.csproj", "{8761F765-3F79-4321-B372-E106DEA3FAB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETS.ClientPortal.Core", "Source\ETS.ClientPortal.Core\ETS.ClientPortal.Core.csproj", "{3853B732-8943-4D7A-A8D0-ECE61F86BAB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETS.ClientPortal.Infrastructure.Data.EntityFramework", "Source\ETS.ClientPortal.Infrastructure.Data.EntityFramework\ETS.ClientPortal.Infrastructure.Data.EntityFramework.csproj", "{CA0BFD6A-BE50-41D1-97D0-00776B506E18}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = FIS.DSI.Web1.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEAEF5AC-E6E5-4256-A4F0-16C233C7FED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEAEF5AC-E6E5-4256-A4F0-16C233C7FED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEAEF5AC-E6E5-4256-A4F0-16C233C7FED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEAEF5AC-E6E5-4256-A4F0-16C233C7FED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C86FD2D-79F5-48BB-BC4F-247D11291BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C86FD2D-79F5-48BB-BC4F-247D11291BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C86FD2D-79F5-48BB-BC4F-247D11291BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C86FD2D-79F5-48BB-BC4F-247D11291BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B55EC56-E091-415D-9F67-C9057F1A745F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B55EC56-E091-415D-9F67-C9057F1A745F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B55EC56-E091-415D-9F67-C9057F1A745F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B55EC56-E091-415D-9F67-C9057F1A745F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8761F765-3F79-4321-B372-E106DEA3FAB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8761F765-3F79-4321-B372-E106DEA3FAB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8761F765-3F79-4321-B372-E106DEA3FAB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8761F765-3F79-4321-B372-E106DEA3FAB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3853B732-8943-4D7A-A8D0-ECE61F86BAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3853B732-8943-4D7A-A8D0-ECE61F86BAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3853B732-8943-4D7A-A8D0-ECE61F86BAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3853B732-8943-4D7A-A8D0-ECE61F86BAB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA0BFD6A-BE50-41D1-97D0-00776B506E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA0BFD6A-BE50-41D1-97D0-00776B506E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA0BFD6A-BE50-41D1-97D0-00776B506E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0BFD6A-BE50-41D1-97D0-00776B506E18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EEAEF5AC-E6E5-4256-A4F0-16C233C7FED7} = {2514FD1A-717B-4986-BE7D-134E55FF9DD9}
+		{8761F765-3F79-4321-B372-E106DEA3FAB2} = {0D4C6B09-8153-4E70-8D86-C68F7B23433D}
+		{CA0BFD6A-BE50-41D1-97D0-00776B506E18} = {0D4C6B09-8153-4E70-8D86-C68F7B23433D}
+		{1B55EC56-E091-415D-9F67-C9057F1A745F} = {63366BD6-43CD-467E-B376-7874CEE02F11}
+		{8E07341D-0790-4204-823C-829AD366892C} = {09B3E97B-7AA2-4339-9C60-3B60DE6401AA}
+		{2C86FD2D-79F5-48BB-BC4F-247D11291BD8} = {09B3E97B-7AA2-4339-9C60-3B60DE6401AA}
+		{3853B732-8943-4D7A-A8D0-ECE61F86BAB6} = {C36DDDD3-999C-4CA7-8EC3-5CDFE4CA3C47}
+	EndGlobalSection
+EndGlobal
